@@ -1,0 +1,258 @@
+.steps {
+    margin-bottom: 120px;
+}
+
+.steps__container {
+    display: grid;
+    grid-template-columns: 40% 55%;
+    grid-template-areas:
+        "item-1 item-2"
+        "item-1 item-3"
+        "item-1 item-3"
+        "item-1 item-3"
+        "item-1 item-3"
+        "item-1 item-3";
+    gap: 45px;
+}
+
+._steps-1 {
+    grid-area: item-1;
+}
+
+._steps-2 {
+    grid-area: item-2;
+}
+
+._steps-3 {
+    grid-area: item-3;
+}
+
+.steps-item {}
+
+.steps-item__title {
+    color: rgb(33, 37, 41);
+    font-family: Helvetica;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 66px;
+    text-align: left;
+}
+
+.steps-item__text {
+    width: 35%;
+    padding-top: 20px;
+    padding-left: 10%;
+    color: rgb(33, 37, 41);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+}
+
+.steps-item__block {
+    position: relative;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+.step-block {
+    display: flex;
+    gap: 20px;
+    max-width: 678px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+
+}
+
+.step-block:last-child {
+    border-bottom: none;
+    position: relative;
+
+
+}
+
+.step-block:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+
+}
+
+.step-block__title {
+    width: 50%;
+    color: rgb(33, 37, 41);
+    font-family: Helvetica;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: left;
+}
+
+._step-title-4 {
+    margin-bottom: 45px;
+
+
+}
+
+._step-title-5 {
+    margin-bottom: 45px;
+
+
+}
+
+.step-block__text {
+    width: 50%;
+    color: rgb(33, 37, 41);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+._step-text-5 {}
+
+@media screen and (max-width: 992px) {
+    .step-block__title {
+        font-size: 28px;
+        line-height: 138%;
+        text-align: left;
+    }
+
+    .step-block__text {
+        font-size: 14px;
+        line-height: 140%;
+        text-align: left;
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .steps-item__text {
+        width: 70%;
+
+    }
+
+    .step-block__title {
+        font-size: 20px;
+        line-height: 138%;
+        text-align: left;
+    }
+
+    .step-block__text {
+        font-size: 12px;
+        line-height: 140%;
+        text-align: left;
+        margin-bottom: 24px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .steps {
+        margin-bottom: 60px;
+    }
+    
+    .steps__container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "item-1"
+            "item-2"
+            "item-3";
+        gap: 25px;
+    }
+    .steps-item__text {
+        width: 100%;
+        padding-top: 0x;
+        padding-left: 0%;
+        font-size: 20px;
+
+    }
+    
+    .steps-item__block {
+        position: relative;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    
+    }
+    .step-block__title {
+        width: 100%;
+    }
+
+    .step-block__text {
+        width: 100%;
+    }
+    ._step-title-4 {
+        margin-bottom: 0px;
+    
+    
+    }
+    
+    ._step-title-5 {
+        margin-bottom: 0px;
+    
+    
+    }
+    
+    .step-block {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border-bottom: 1px solid rgb(0, 0, 0);
+    
+    }
+    
+    .step-block:last-child {
+        border-bottom:none;
+    
+    
+    }
+    
+    .step-block:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    
+    
+    }
+
+}
+@media screen and (max-width: 375px) {
+    .steps {
+        margin-bottom: 50px;
+    }
+    
+    .steps__container {
+        gap: 20px;
+    }
+    .steps-item__title {
+        font-size: 28px;
+        line-height: 39px;
+    }
+    
+    .steps-item__text {
+        padding-top: 0px;
+        padding-left: 0%;
+        font-size: 16px;
+        line-height: 140%;
+    }
+    .step-block__title {
+        font-size: 24px;
+        line-height: 33px;
+    }
+    .step-block__text {
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+}

@@ -1,0 +1,109 @@
+.aveji-form {
+    margin-bottom: 120px;
+}
+.aveji-form__container {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 0 50%;
+    gap: 120px;
+}
+.aveji-form__image {
+    align-self: center;
+}
+.aveji-form__img {
+    width: 100%;
+}
+.aveji-form__content {
+    display: flex;
+    flex-direction: column;
+}
+.content-item {
+}
+.content-item__title {
+    font-family: Helvetica;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 66px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+.content-item__text {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+    margin-bottom: 70px;
+}
+.content-item__form {
+}
+.form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+.form-item__input {
+    color: rgb(33, 37, 41);
+    border:none;
+    border-bottom:1px solid rgb(33, 37, 41);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+}
+.form-item__input:last-child{
+}
+.content-item__button {
+    box-sizing: border-box;
+    width: max-content;
+    border:none;
+    background-color: rgb(33, 37, 41);
+    padding: 12px 20px;
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.content-item__image {
+}
+.content-item__img {
+    max-width: 240px;
+}
+@media screen and (max-width: 768px) {
+    .aveji-form {
+        margin-bottom: 60px;
+    }
+    .aveji-form__container {
+        display: flex;
+        justify-content: space-between;
+        flex: 1 0 100%;
+        gap: 0;
+    }
+    .aveji-form__image {
+        display: none;
+    }
+
+}
+@media screen and (max-width: 375px) {
+    .aveji-form {
+        margin-bottom: 50px;
+    }
+    .content-item__title {
+        font-size: 28px;
+        line-height: 39px;
+        margin-bottom: 20px;
+    }
+    .content-item__text {
+        font-size: 16px;
+        line-height: 140%;
+        margin-bottom: 30px;
+    }
+    .content-item__button {
+        margin-bottom: 30px;
+    }
+}
