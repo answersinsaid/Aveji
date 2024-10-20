@@ -10,3 +10,11 @@
 @import url(./aveji-form.css);
 @import url(./footer.css);
 @import url(./reset.css);
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/roboto/roboto.css);
+}
+@font-face {
+    font-family: "Helvetica";
+    src: url(../fonts/Helvetica/helvetica_regular.otf);
+}

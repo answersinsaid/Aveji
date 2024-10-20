@@ -67,12 +67,7 @@
 
 }
 
-.step-block:last-child {
-    border-bottom: none;
-    position: relative;
 
-
-}
 
 .step-block:after {
     content: '';
